@@ -1,21 +1,30 @@
 {
   "name": "mirk-ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "main": "./dist/exports.js",
+  "files": ["./dist"],
+  "exports": {
+    ".": "./dist/exports.js"
+  }, 
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start"
-  },
-  "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "clsx": "^2.1.1",
+    "next": "15.5.2",
+    "sass": "^1.92.0"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   }
 }

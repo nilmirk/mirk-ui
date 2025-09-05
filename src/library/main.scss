@@ -1,0 +1,147 @@
+@use 'sass:list';
+@use '@/app/styles/variables' as *;
+
+// other
+@mixin flex($direction, $wrap, $gap, $center: false) {
+  display: inline-flex;
+  flex-flow: $direction $wrap;
+  gap: $gap*$mirk;
+  align-items: center;
+  @if $center {
+    justify-content: center;
+  }
+}
+@mixin outline {
+  outline: 2*$mirk solid;
+  outline-offset: -2*$mirk;
+}
+
+// text
+@mixin text($size, $weight, $font) {
+  font: {
+    size: $size*$mirk;
+    family: $font;
+    weight: $weight;
+  };
+}
+
+// headings
+.heading1 {
+  @include text(96, 700, $fontHeading);
+}
+.heading2 {
+  @include text(64, 700, $fontHeading);
+}
+.heading3 {
+  @include text(48, 600, $fontHeading);
+}
+.heading4 {
+  @include text(40, 600, $fontHeading);
+}
+
+// body
+.body1 {
+  @include text(36, 600, $fontBody);
+}
+.body2 {
+  @include text(32, 500, $fontBody);
+}
+.body3 {
+  @include text(24, 500, $fontBody);
+}
+.body4 {
+  @include text(20, 400, $fontBody);
+}
+
+// caption
+.caption1 {
+  @include text(16, 400, $fontCaption);
+}
+.caption2 {
+  @include text(12, 400, $fontCaption);
+}
+
+// button
+.button1 {
+  @include text(24, 700, $fontBody);
+}
+.button2 {
+  @include text(20, 700, $fontBody);
+}
+
+
+// buttons
+@mixin button {
+  @include flex(row, nowrap, 8);
+  padding: 4*$mirk 12*$mirk;
+  border-radius: 8*$mirk;
+  cursor: pointer;
+}
+
+$buttons: (
+  'white': ($white, $black, $whiteHover, $blackHover),
+  'whiteAccent': ($white, $accent, $whiteHover, $accentHover),
+  'black': ($black, $white, $blackHover, $whiteHover),
+  'blackAccent': ($black, $accent, $blackHover, $accentHover),
+  'accentWhite': ($accent, $white, $accentHover, $whiteHover),
+  'accentBlack': ($accent, $black, $accentHover, $blackHover),
+);
+$buttonsOutline: (
+  'white': ($white, $whiteHover),
+  'whiteAccent': ($white, $accent),
+  'black': ($black, $blackHover),
+  'blackAccent': ($black, $accent),
+  'accent': ($accent, $accentHover),
+);
+
+@each $name, $color in $buttons {
+  .button-#{$name} {
+    @include button;
+    background-color: list.nth($color, 1);
+    color: list.nth($color, 2);
+    &:hover {
+      background-color: list.nth($color, 3);
+      color: list.nth($color, 4);
+    }
+  }
+}
+@each $name, $color in $buttonsOutline {
+  .button-outline-#{$name} {
+    @include button;
+    @include outline;
+    outline-color: list.nth($color, 1);
+    color: list.nth($color, 1);
+    &:hover {
+      outline-color: list.nth($color, 2);
+    color: list.nth($color, 2);
+    }
+  }
+}
+
+.button-icon {
+  padding: 8*$mirk;
+}
+
+// links
+@mixin link {
+  @include flex(row, nowrap, 8);
+  cursor: pointer;
+}
+
+$links: (
+  'white': ($white, $whiteHover),
+  'whiteAccent': ($white, $accent),
+  'black': ($black, $blackHover),
+  'blackAccent': ($black, $accent),
+  'accent': ($accent, $accentHover),
+);
+
+@each $name, $color in $links {
+  .link-#{$name} {
+    @include link;
+    color: list.nth($color, 1);
+    &:hover {
+      color: list.nth($color, 2);
+    }
+  }
+}

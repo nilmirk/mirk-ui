@@ -1,0 +1,323 @@
+@use 'sass:list';
+@use '@/app/styles/variables' as *;
+
+// inputs
+$backgrounds: (
+  'white': ($white, $black, $whiteHover, $blackHover, $black, $blackHover),
+  'white2': ($white, $black, $whiteHover, $blackHover, $white, $whiteHover),
+  'black': ($black, $white, $blackHover, $whiteHover, $white, $whiteHover),
+  'black2': ($black, $white, $blackHover, $whiteHover, $black, $blackHover)
+);
+$outlines: (
+  'white': ($white, $whiteHover),
+  'black': ($black, $blackHover),
+);
+
+@mixin flex($direction, $wrap, $gap, $center: false) {
+  display: inline-flex;
+  flex-flow: $direction $wrap;
+  gap: $gap*$mirk;
+  align-items: center;
+  @if $center {
+    justify-content: center;
+  }
+}
+@mixin outline {
+  outline: 2*$mirk solid;
+  outline-offset: -2*$mirk;
+}
+
+// input text
+@mixin inputText {
+  @include flex(row, nowrap, 8);
+  padding: 4*$mirk 8*$mirk;
+  border-radius: 8*$mirk;
+  width: var(--width);
+  cursor: text;
+  span {
+    color: inherit;
+    font: inherit;
+  }
+  input {
+    width: calc(var(--width) - 16*$mirk);
+    position: absolute;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+  }
+  .size-saver {
+    opacity: 0;
+  }
+  &:focus-within, &.input-text-valid {
+    span {
+      @extend .caption2;
+      margin-top: -56*$mirk;
+      margin-left: -8*$mirk;
+    }
+  }
+}
+@each $name, $color in $backgrounds {
+  .input-text-#{$name} {
+    @include inputText;
+    background-color: list.nth($color, 1);
+    color: list.nth($color, 2);
+    &:hover {
+      background-color: list.nth($color, 3);
+      color: list.nth($color, 4);
+    }
+    &.input-text-valid {
+      span {
+        color: list.nth($color, 1);
+      }
+      &:hover span {
+        color: list.nth($color, 3);
+      }
+    }
+    &:focus-within {
+    background-color: $accent;
+    color: list.nth($color, 5);
+    span {
+        color: $accent;
+      }
+      &:hover {
+        background-color: $accentHover;
+        color: list.nth($color, 6);
+        span {
+          color: $accentHover;
+        }
+      }
+    }
+  }
+}
+@each $name, $color in $outlines {
+  .input-text-outline-#{$name} {
+    @include inputText;
+    @include outline;
+    outline-color: list.nth($color, 1);
+    color: list.nth($color, 1);
+    &:hover {
+      outline-color: list.nth($color, 2);
+      color: list.nth($color, 2);
+    }
+    &.input-text-valid {
+      span {
+        color: list.nth($color, 1);
+      }
+      &:hover span {
+        color: list.nth($color, 2);
+      }
+    }
+    &:focus-within {
+    outline-color: $accent;
+    color: $accent;
+    span {
+        color: $accent;
+      }
+      &:hover {
+        outline-color: $accentHover;
+        color: $accentHover;
+        span {
+          color: $accentHover;
+        }
+      }
+    }
+  }
+}
+
+// checkbox
+@mixin checkbox {
+  @include flex(row, nowrap, 0, true);
+  width: 24*$mirk;
+  height: 24*$mirk;
+  border-radius: 8*$mirk;
+  cursor: pointer;
+  span {
+    @include flex(row, nowrap, 0, true);
+    color: transparent;
+  }
+  input {
+    display: none;
+  }
+}
+@each $name, $color in $backgrounds {
+  .checkbox-#{$name} {
+    @include checkbox;
+    background-color: list.nth($color, 1);
+    &:hover {
+      background-color: list.nth($color, 3);
+      span {
+        color: list.nth($color, 4);
+      }
+    }
+    &:has(input:checked) {
+      background-color: $accent;
+      span {
+        color: list.nth($color, 5);
+      }
+      &:hover {
+        background-color: $accentHover;
+      span {
+        color: list.nth($color, 6);
+      }
+      }
+    }
+  }
+}
+@each $name, $color in $outlines {
+  .checkbox-outline-#{$name} {
+    @include checkbox;
+    @include outline;
+    outline-color: list.nth($color, 1);
+    &:hover {
+      outline-color: list.nth($color, 2);
+      span {
+        color: list.nth($color, 2);
+      }
+    }
+    &:has(input:checked) {
+      outline-color: $accent;
+      span {
+        color: $accent;
+      }
+      &:hover {
+        outline-color: $accentHover;
+      span {
+        color: $accentHover;
+      }
+      }
+    }
+  }
+}
+
+// radio
+@mixin radio {
+  @include flex(row, nowrap, 0, true);
+  width: 24*$mirk;
+  height: 24*$mirk;
+  border-radius: 12*$mirk;
+  cursor: pointer;
+  span {
+    width: 16*$mirk;
+    height: 16*$mirk;
+    border-radius: 8*$mirk;
+  }
+  input {
+    display: none;
+  }
+}
+@each $name, $color in $backgrounds {
+  .radio-#{$name} {
+    @include radio;
+    background-color: list.nth($color, 1);
+    &:hover {
+      background-color: list.nth($color, 3);
+    }
+    &:has(input:checked) {
+      background-color: $accent;
+      &:hover {
+        background-color: $accentHover;
+      }
+    }
+  }
+}
+@each $name, $color in $outlines {
+  .radio-outline-#{$name} {
+    @include radio;
+    @include outline;
+    outline-color: list.nth($color, 1);
+    &:hover {
+      outline-color: list.nth($color, 2);
+      span {
+        background-color: list.nth($color, 2);
+      }
+    }
+    &:has(input:checked) {
+      outline-color: $accent;
+      span {
+        background-color: $accent;
+      }
+      &:hover {
+        outline-color: $accentHover;
+      span {
+        background-color: $accentHover;
+      }
+      }
+    }
+  }
+}
+
+// switch
+@mixin switch {
+  @include flex(row, nowrap, 0, true);
+  width: 48*$mirk;
+  height: 24*$mirk;
+  border-radius: 12*$mirk;
+  cursor: pointer;
+  span {
+    width: 16*$mirk;
+    height: 16*$mirk;
+    border-radius: 8*$mirk;
+    margin-left: -24*$mirk;
+  }
+  input {
+    display: none;
+  }
+  &:has(input:checked) span {
+    margin-left: 24*$mirk;
+  }
+}
+@each $name, $color in $backgrounds {
+  .switch-#{$name} {
+    @include switch;
+    background-color: list.nth($color, 1);
+    span {
+      background-color: list.nth($color, 3);
+    }
+    &:hover {
+      background-color: list.nth($color, 3);
+      span {
+      background-color: list.nth($color, 4);
+      }
+    }
+    &:has(input:checked) {
+      background-color: $accent;
+      span {
+        background-color: list.nth($color, 5);
+      }
+      &:hover {
+        background-color: $accentHover;
+        span {
+          background-color: list.nth($color, 6);
+        }
+      }
+    }
+  }
+}
+@each $name, $color in $outlines {
+  .switch-outline-#{$name} {
+    @include switch;
+    @include outline;
+    outline-color: list.nth($color, 1);
+    span {
+      background-color: list.nth($color, 1);
+    }
+    &:hover {
+      outline-color: list.nth($color, 2);
+      span {
+        background-color: list.nth($color, 2);
+      }
+    }
+    &:has(input:checked) {
+      outline-color: $accent;
+      span {
+        background-color: $accent;
+      }
+      &:hover {
+        outline-color: $accentHover;
+        span {
+          background-color: $accentHover;
+        }
+      }
+    }
+  }
+}
