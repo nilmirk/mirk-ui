@@ -16,7 +16,7 @@ import Link from "next/link";
 import { Color } from "./base";
 const Texting = (_a) => {
     var { children, text = "body3", className } = _a, rest = __rest(_a, ["children", "text", "className"]);
-    return (_jsx("p", Object.assign({ className: clsx({
+    return (_jsx("div", Object.assign({ className: clsx({
             [className]: className,
             [text]: true,
         }) }, rest, { children: children })));

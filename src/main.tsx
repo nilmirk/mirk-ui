@@ -10,7 +10,7 @@ const Texting: React.FC<BaseProps> = ({
   ...rest
 }) => {
   return (
-    <p
+    <div
       className={clsx({
         [className as string]: className,
         [text]: true,
@@ -18,7 +18,7 @@ const Texting: React.FC<BaseProps> = ({
       {...rest}
     >
       {children}
-    </p>
+    </div>
   );
 };
 
