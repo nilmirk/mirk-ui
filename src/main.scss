@@ -1,5 +1,5 @@
 @use 'sass:list';
-@use '@/app/styles/variables' as *;
+@use './variables' as *;
 
 // other
 @mixin flex($direction, $wrap, $gap, $center: false) {

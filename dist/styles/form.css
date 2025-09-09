@@ -1,0 +1,1443 @@
+.heading1 {
+  font-size: 6rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading2 {
+  font-size: 4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading3 {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.heading4 {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.body1 {
+  font-size: 2.25rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.body2 {
+  font-size: 2rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.body3 {
+  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.body4 {
+  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.caption1 {
+  font-size: 1rem;
+  font-family: var(--font-caption);
+  font-weight: 400;
+}
+
+.caption2, .input-text-white:focus-within span, .input-text-white.input-text-valid span, .input-text-white2:focus-within span, .input-text-white2.input-text-valid span, .input-text-black:focus-within span, .input-text-black.input-text-valid span, .input-text-black2:focus-within span, .input-text-black2.input-text-valid span, .input-text-outline-white:focus-within span, .input-text-outline-white.input-text-valid span, .input-text-outline-black:focus-within span, .input-text-outline-black.input-text-valid span {
+  font-size: 0.75rem;
+  font-family: var(--font-caption);
+  font-weight: 400;
+}
+
+.button1 {
+  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.button2 {
+  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.button-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EBEBEB;
+  color: #141414;
+}
+.button-white:hover {
+  background-color: #ABABAB;
+  color: #545454;
+}
+
+.button-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EBEBEB;
+  color: #135BEB;
+}
+.button-whiteAccent:hover {
+  background-color: #ABABAB;
+  color: #4785FF;
+}
+
+.button-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #141414;
+  color: #EBEBEB;
+}
+.button-black:hover {
+  background-color: #545454;
+  color: #ABABAB;
+}
+
+.button-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #141414;
+  color: #135BEB;
+}
+.button-blackAccent:hover {
+  background-color: #545454;
+  color: #4785FF;
+}
+
+.button-accentWhite {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #135BEB;
+  color: #EBEBEB;
+}
+.button-accentWhite:hover {
+  background-color: #4785FF;
+  color: #ABABAB;
+}
+
+.button-accentBlack {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #135BEB;
+  color: #141414;
+}
+.button-accentBlack:hover {
+  background-color: #4785FF;
+  color: #545454;
+}
+
+.button-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+  color: #EBEBEB;
+}
+.button-outline-white:hover {
+  outline-color: #ABABAB;
+  color: #ABABAB;
+}
+
+.button-outline-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+  color: #EBEBEB;
+}
+.button-outline-whiteAccent:hover {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+
+.button-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+  color: #141414;
+}
+.button-outline-black:hover {
+  outline-color: #545454;
+  color: #545454;
+}
+
+.button-outline-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+  color: #141414;
+}
+.button-outline-blackAccent:hover {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+
+.button-outline-accent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+.button-outline-accent:hover {
+  outline-color: #4785FF;
+  color: #4785FF;
+}
+
+.button-icon {
+  padding: 0.5rem;
+}
+
+.link-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #EBEBEB;
+}
+.link-white:hover {
+  color: #ABABAB;
+}
+
+.link-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #EBEBEB;
+}
+.link-whiteAccent:hover {
+  color: #135BEB;
+}
+
+.link-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #141414;
+}
+.link-black:hover {
+  color: #545454;
+}
+
+.link-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #141414;
+}
+.link-blackAccent:hover {
+  color: #135BEB;
+}
+
+.link-accent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #135BEB;
+}
+.link-accent:hover {
+  color: #4785FF;
+}
+
+.input-text-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-white span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-white input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-white .size-saver {
+  opacity: 0;
+}
+.input-text-white:focus-within span, .input-text-white.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-white {
+  background-color: #EBEBEB;
+  color: #141414;
+}
+.input-text-white:hover {
+  background-color: #ABABAB;
+  color: #545454;
+}
+.input-text-white.input-text-valid span {
+  color: #EBEBEB;
+}
+.input-text-white.input-text-valid:hover span {
+  color: #ABABAB;
+}
+.input-text-white:focus-within {
+  background-color: #135BEB;
+  color: #141414;
+}
+.input-text-white:focus-within span {
+  color: #135BEB;
+}
+.input-text-white:focus-within:hover {
+  background-color: #4785FF;
+  color: #545454;
+}
+.input-text-white:focus-within:hover span {
+  color: #4785FF;
+}
+
+.input-text-white2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-white2 span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-white2 input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-white2 .size-saver {
+  opacity: 0;
+}
+.input-text-white2:focus-within span, .input-text-white2.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-white2 {
+  background-color: #EBEBEB;
+  color: #141414;
+}
+.input-text-white2:hover {
+  background-color: #ABABAB;
+  color: #545454;
+}
+.input-text-white2.input-text-valid span {
+  color: #EBEBEB;
+}
+.input-text-white2.input-text-valid:hover span {
+  color: #ABABAB;
+}
+.input-text-white2:focus-within {
+  background-color: #135BEB;
+  color: #EBEBEB;
+}
+.input-text-white2:focus-within span {
+  color: #135BEB;
+}
+.input-text-white2:focus-within:hover {
+  background-color: #4785FF;
+  color: #ABABAB;
+}
+.input-text-white2:focus-within:hover span {
+  color: #4785FF;
+}
+
+.input-text-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-black span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-black input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-black .size-saver {
+  opacity: 0;
+}
+.input-text-black:focus-within span, .input-text-black.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-black {
+  background-color: #141414;
+  color: #EBEBEB;
+}
+.input-text-black:hover {
+  background-color: #545454;
+  color: #ABABAB;
+}
+.input-text-black.input-text-valid span {
+  color: #141414;
+}
+.input-text-black.input-text-valid:hover span {
+  color: #545454;
+}
+.input-text-black:focus-within {
+  background-color: #135BEB;
+  color: #EBEBEB;
+}
+.input-text-black:focus-within span {
+  color: #135BEB;
+}
+.input-text-black:focus-within:hover {
+  background-color: #4785FF;
+  color: #ABABAB;
+}
+.input-text-black:focus-within:hover span {
+  color: #4785FF;
+}
+
+.input-text-black2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-black2 span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-black2 input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-black2 .size-saver {
+  opacity: 0;
+}
+.input-text-black2:focus-within span, .input-text-black2.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-black2 {
+  background-color: #141414;
+  color: #EBEBEB;
+}
+.input-text-black2:hover {
+  background-color: #545454;
+  color: #ABABAB;
+}
+.input-text-black2.input-text-valid span {
+  color: #141414;
+}
+.input-text-black2.input-text-valid:hover span {
+  color: #545454;
+}
+.input-text-black2:focus-within {
+  background-color: #135BEB;
+  color: #141414;
+}
+.input-text-black2:focus-within span {
+  color: #135BEB;
+}
+.input-text-black2:focus-within:hover {
+  background-color: #4785FF;
+  color: #545454;
+}
+.input-text-black2:focus-within:hover span {
+  color: #4785FF;
+}
+
+.input-text-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-outline-white span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-outline-white input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-outline-white .size-saver {
+  opacity: 0;
+}
+.input-text-outline-white:focus-within span, .input-text-outline-white.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-outline-white {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+  color: #EBEBEB;
+}
+.input-text-outline-white:hover {
+  outline-color: #ABABAB;
+  color: #ABABAB;
+}
+.input-text-outline-white.input-text-valid span {
+  color: #EBEBEB;
+}
+.input-text-outline-white.input-text-valid:hover span {
+  color: #ABABAB;
+}
+.input-text-outline-white:focus-within {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+.input-text-outline-white:focus-within span {
+  color: #135BEB;
+}
+.input-text-outline-white:focus-within:hover {
+  outline-color: #4785FF;
+  color: #4785FF;
+}
+.input-text-outline-white:focus-within:hover span {
+  color: #4785FF;
+}
+
+.input-text-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  width: var(--width);
+  cursor: text;
+}
+.input-text-outline-black span {
+  color: inherit;
+  font: inherit;
+}
+.input-text-outline-black input {
+  width: calc(var(--width) - 1rem);
+  position: absolute;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+.input-text-outline-black .size-saver {
+  opacity: 0;
+}
+.input-text-outline-black:focus-within span, .input-text-outline-black.input-text-valid span {
+  margin-top: -3.5rem;
+  margin-left: -0.5rem;
+}
+.input-text-outline-black {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+  color: #141414;
+}
+.input-text-outline-black:hover {
+  outline-color: #545454;
+  color: #545454;
+}
+.input-text-outline-black.input-text-valid span {
+  color: #141414;
+}
+.input-text-outline-black.input-text-valid:hover span {
+  color: #545454;
+}
+.input-text-outline-black:focus-within {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+.input-text-outline-black:focus-within span {
+  color: #135BEB;
+}
+.input-text-outline-black:focus-within:hover {
+  outline-color: #4785FF;
+  color: #4785FF;
+}
+.input-text-outline-black:focus-within:hover span {
+  color: #4785FF;
+}
+
+.checkbox-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-white span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-white input {
+  display: none;
+}
+.checkbox-white {
+  background-color: #EBEBEB;
+}
+.checkbox-white:hover {
+  background-color: #ABABAB;
+}
+.checkbox-white:hover span {
+  color: #545454;
+}
+.checkbox-white:has(input:checked) {
+  background-color: #135BEB;
+}
+.checkbox-white:has(input:checked) span {
+  color: #141414;
+}
+.checkbox-white:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.checkbox-white:has(input:checked):hover span {
+  color: #545454;
+}
+
+.checkbox-white2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-white2 span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-white2 input {
+  display: none;
+}
+.checkbox-white2 {
+  background-color: #EBEBEB;
+}
+.checkbox-white2:hover {
+  background-color: #ABABAB;
+}
+.checkbox-white2:hover span {
+  color: #545454;
+}
+.checkbox-white2:has(input:checked) {
+  background-color: #135BEB;
+}
+.checkbox-white2:has(input:checked) span {
+  color: #EBEBEB;
+}
+.checkbox-white2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.checkbox-white2:has(input:checked):hover span {
+  color: #ABABAB;
+}
+
+.checkbox-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-black span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-black input {
+  display: none;
+}
+.checkbox-black {
+  background-color: #141414;
+}
+.checkbox-black:hover {
+  background-color: #545454;
+}
+.checkbox-black:hover span {
+  color: #ABABAB;
+}
+.checkbox-black:has(input:checked) {
+  background-color: #135BEB;
+}
+.checkbox-black:has(input:checked) span {
+  color: #EBEBEB;
+}
+.checkbox-black:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.checkbox-black:has(input:checked):hover span {
+  color: #ABABAB;
+}
+
+.checkbox-black2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-black2 span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-black2 input {
+  display: none;
+}
+.checkbox-black2 {
+  background-color: #141414;
+}
+.checkbox-black2:hover {
+  background-color: #545454;
+}
+.checkbox-black2:hover span {
+  color: #ABABAB;
+}
+.checkbox-black2:has(input:checked) {
+  background-color: #135BEB;
+}
+.checkbox-black2:has(input:checked) span {
+  color: #141414;
+}
+.checkbox-black2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.checkbox-black2:has(input:checked):hover span {
+  color: #545454;
+}
+
+.checkbox-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-outline-white span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-outline-white input {
+  display: none;
+}
+.checkbox-outline-white {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+}
+.checkbox-outline-white:hover {
+  outline-color: #ABABAB;
+}
+.checkbox-outline-white:hover span {
+  color: #ABABAB;
+}
+.checkbox-outline-white:has(input:checked) {
+  outline-color: #135BEB;
+}
+.checkbox-outline-white:has(input:checked) span {
+  color: #135BEB;
+}
+.checkbox-outline-white:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.checkbox-outline-white:has(input:checked):hover span {
+  color: #4785FF;
+}
+
+.checkbox-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.checkbox-outline-black span {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+.checkbox-outline-black input {
+  display: none;
+}
+.checkbox-outline-black {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+}
+.checkbox-outline-black:hover {
+  outline-color: #545454;
+}
+.checkbox-outline-black:hover span {
+  color: #545454;
+}
+.checkbox-outline-black:has(input:checked) {
+  outline-color: #135BEB;
+}
+.checkbox-outline-black:has(input:checked) span {
+  color: #135BEB;
+}
+.checkbox-outline-black:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.checkbox-outline-black:has(input:checked):hover span {
+  color: #4785FF;
+}
+
+.radio-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-white span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-white input {
+  display: none;
+}
+.radio-white {
+  background-color: #EBEBEB;
+}
+.radio-white:hover {
+  background-color: #ABABAB;
+}
+.radio-white:has(input:checked) {
+  background-color: #135BEB;
+}
+.radio-white:has(input:checked):hover {
+  background-color: #4785FF;
+}
+
+.radio-white2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-white2 span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-white2 input {
+  display: none;
+}
+.radio-white2 {
+  background-color: #EBEBEB;
+}
+.radio-white2:hover {
+  background-color: #ABABAB;
+}
+.radio-white2:has(input:checked) {
+  background-color: #135BEB;
+}
+.radio-white2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+
+.radio-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-black span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-black input {
+  display: none;
+}
+.radio-black {
+  background-color: #141414;
+}
+.radio-black:hover {
+  background-color: #545454;
+}
+.radio-black:has(input:checked) {
+  background-color: #135BEB;
+}
+.radio-black:has(input:checked):hover {
+  background-color: #4785FF;
+}
+
+.radio-black2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-black2 span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-black2 input {
+  display: none;
+}
+.radio-black2 {
+  background-color: #141414;
+}
+.radio-black2:hover {
+  background-color: #545454;
+}
+.radio-black2:has(input:checked) {
+  background-color: #135BEB;
+}
+.radio-black2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+
+.radio-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-outline-white span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-outline-white input {
+  display: none;
+}
+.radio-outline-white {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+}
+.radio-outline-white:hover {
+  outline-color: #ABABAB;
+}
+.radio-outline-white:hover span {
+  background-color: #ABABAB;
+}
+.radio-outline-white:has(input:checked) {
+  outline-color: #135BEB;
+}
+.radio-outline-white:has(input:checked) span {
+  background-color: #135BEB;
+}
+.radio-outline-white:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.radio-outline-white:has(input:checked):hover span {
+  background-color: #4785FF;
+}
+
+.radio-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.radio-outline-black span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+.radio-outline-black input {
+  display: none;
+}
+.radio-outline-black {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+}
+.radio-outline-black:hover {
+  outline-color: #545454;
+}
+.radio-outline-black:hover span {
+  background-color: #545454;
+}
+.radio-outline-black:has(input:checked) {
+  outline-color: #135BEB;
+}
+.radio-outline-black:has(input:checked) span {
+  background-color: #135BEB;
+}
+.radio-outline-black:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.radio-outline-black:has(input:checked):hover span {
+  background-color: #4785FF;
+}
+
+.switch-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-white span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-white input {
+  display: none;
+}
+.switch-white:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-white {
+  background-color: #EBEBEB;
+}
+.switch-white span {
+  background-color: #ABABAB;
+}
+.switch-white:hover {
+  background-color: #ABABAB;
+}
+.switch-white:hover span {
+  background-color: #545454;
+}
+.switch-white:has(input:checked) {
+  background-color: #135BEB;
+}
+.switch-white:has(input:checked) span {
+  background-color: #141414;
+}
+.switch-white:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.switch-white:has(input:checked):hover span {
+  background-color: #545454;
+}
+
+.switch-white2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-white2 span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-white2 input {
+  display: none;
+}
+.switch-white2:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-white2 {
+  background-color: #EBEBEB;
+}
+.switch-white2 span {
+  background-color: #ABABAB;
+}
+.switch-white2:hover {
+  background-color: #ABABAB;
+}
+.switch-white2:hover span {
+  background-color: #545454;
+}
+.switch-white2:has(input:checked) {
+  background-color: #135BEB;
+}
+.switch-white2:has(input:checked) span {
+  background-color: #EBEBEB;
+}
+.switch-white2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.switch-white2:has(input:checked):hover span {
+  background-color: #ABABAB;
+}
+
+.switch-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-black span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-black input {
+  display: none;
+}
+.switch-black:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-black {
+  background-color: #141414;
+}
+.switch-black span {
+  background-color: #545454;
+}
+.switch-black:hover {
+  background-color: #545454;
+}
+.switch-black:hover span {
+  background-color: #ABABAB;
+}
+.switch-black:has(input:checked) {
+  background-color: #135BEB;
+}
+.switch-black:has(input:checked) span {
+  background-color: #EBEBEB;
+}
+.switch-black:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.switch-black:has(input:checked):hover span {
+  background-color: #ABABAB;
+}
+
+.switch-black2 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-black2 span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-black2 input {
+  display: none;
+}
+.switch-black2:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-black2 {
+  background-color: #141414;
+}
+.switch-black2 span {
+  background-color: #545454;
+}
+.switch-black2:hover {
+  background-color: #545454;
+}
+.switch-black2:hover span {
+  background-color: #ABABAB;
+}
+.switch-black2:has(input:checked) {
+  background-color: #135BEB;
+}
+.switch-black2:has(input:checked) span {
+  background-color: #141414;
+}
+.switch-black2:has(input:checked):hover {
+  background-color: #4785FF;
+}
+.switch-black2:has(input:checked):hover span {
+  background-color: #545454;
+}
+
+.switch-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-outline-white span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-outline-white input {
+  display: none;
+}
+.switch-outline-white:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-outline-white {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+}
+.switch-outline-white span {
+  background-color: #EBEBEB;
+}
+.switch-outline-white:hover {
+  outline-color: #ABABAB;
+}
+.switch-outline-white:hover span {
+  background-color: #ABABAB;
+}
+.switch-outline-white:has(input:checked) {
+  outline-color: #135BEB;
+}
+.switch-outline-white:has(input:checked) span {
+  background-color: #135BEB;
+}
+.switch-outline-white:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.switch-outline-white:has(input:checked):hover span {
+  background-color: #4785FF;
+}
+
+.switch-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.switch-outline-black span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-left: -1.5rem;
+}
+.switch-outline-black input {
+  display: none;
+}
+.switch-outline-black:has(input:checked) span {
+  margin-left: 1.5rem;
+}
+.switch-outline-black {
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+}
+.switch-outline-black span {
+  background-color: #141414;
+}
+.switch-outline-black:hover {
+  outline-color: #545454;
+}
+.switch-outline-black:hover span {
+  background-color: #545454;
+}
+.switch-outline-black:has(input:checked) {
+  outline-color: #135BEB;
+}
+.switch-outline-black:has(input:checked) span {
+  background-color: #135BEB;
+}
+.switch-outline-black:has(input:checked):hover {
+  outline-color: #4785FF;
+}
+.switch-outline-black:has(input:checked):hover span {
+  background-color: #4785FF;
+}
+
+/*# sourceMappingURL=form.css.map */

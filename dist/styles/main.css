@@ -1,0 +1,323 @@
+.heading1 {
+  font-size: 6rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading2 {
+  font-size: 4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading3 {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.heading4 {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.body1 {
+  font-size: 2.25rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.body2 {
+  font-size: 2rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.body3 {
+  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.body4 {
+  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.caption1 {
+  font-size: 1rem;
+  font-family: var(--font-caption);
+  font-weight: 400;
+}
+
+.caption2 {
+  font-size: 0.75rem;
+  font-family: var(--font-caption);
+  font-weight: 400;
+}
+
+.button1 {
+  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.button2 {
+  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.button-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EBEBEB;
+  color: #141414;
+}
+.button-white:hover {
+  background-color: #ABABAB;
+  color: #545454;
+}
+
+.button-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EBEBEB;
+  color: #135BEB;
+}
+.button-whiteAccent:hover {
+  background-color: #ABABAB;
+  color: #4785FF;
+}
+
+.button-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #141414;
+  color: #EBEBEB;
+}
+.button-black:hover {
+  background-color: #545454;
+  color: #ABABAB;
+}
+
+.button-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #141414;
+  color: #135BEB;
+}
+.button-blackAccent:hover {
+  background-color: #545454;
+  color: #4785FF;
+}
+
+.button-accentWhite {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #135BEB;
+  color: #EBEBEB;
+}
+.button-accentWhite:hover {
+  background-color: #4785FF;
+  color: #ABABAB;
+}
+
+.button-accentBlack {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #135BEB;
+  color: #141414;
+}
+.button-accentBlack:hover {
+  background-color: #4785FF;
+  color: #545454;
+}
+
+.button-outline-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+  color: #EBEBEB;
+}
+.button-outline-white:hover {
+  outline-color: #ABABAB;
+  color: #ABABAB;
+}
+
+.button-outline-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #EBEBEB;
+  color: #EBEBEB;
+}
+.button-outline-whiteAccent:hover {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+
+.button-outline-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+  color: #141414;
+}
+.button-outline-black:hover {
+  outline-color: #545454;
+  color: #545454;
+}
+
+.button-outline-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #141414;
+  color: #141414;
+}
+.button-outline-blackAccent:hover {
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+
+.button-outline-accent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0.125rem solid;
+  outline-offset: -0.125rem;
+  outline-color: #135BEB;
+  color: #135BEB;
+}
+.button-outline-accent:hover {
+  outline-color: #4785FF;
+  color: #4785FF;
+}
+
+.button-icon {
+  padding: 0.5rem;
+}
+
+.link-white {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #EBEBEB;
+}
+.link-white:hover {
+  color: #ABABAB;
+}
+
+.link-whiteAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #EBEBEB;
+}
+.link-whiteAccent:hover {
+  color: #135BEB;
+}
+
+.link-black {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #141414;
+}
+.link-black:hover {
+  color: #545454;
+}
+
+.link-blackAccent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #141414;
+}
+.link-blackAccent:hover {
+  color: #135BEB;
+}
+
+.link-accent {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: #135BEB;
+}
+.link-accent:hover {
+  color: #4785FF;
+}
+
+/*# sourceMappingURL=main.css.map */

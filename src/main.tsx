@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
-import "./main.scss";
+// import styles in your app: import "mirk-ui/dist/styles/main.css";
 import { Color, Text, type BaseProps } from "./base";
 
 const Texting: React.FC<BaseProps> = ({

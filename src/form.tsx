@@ -3,7 +3,7 @@
 import { Color, Text, type BaseProps } from "./base";
 import { useState } from "react";
 import clsx from "clsx";
-import "./form.scss";
+// import styles in your app: import "mirk-ui/dist/styles/form.css";
 
 interface InputTextProps extends BaseProps {
   color?: Color;

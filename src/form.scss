@@ -1,5 +1,6 @@
 @use 'sass:list';
-@use '@/app/styles/variables' as *;
+@use './variables' as *;
+@use './main' as *;
 
 // inputs
 $backgrounds: (

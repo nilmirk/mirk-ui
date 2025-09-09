@@ -1,27 +1,32 @@
 {
   "name": "mirk-ui",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
-  "main": "./dist/exports.js",
-  "files": ["./dist"],
+  "main": "./dist/src/index.js",
+  "files": [
+    "./dist",
+    "./dist/styles"
+  ],
   "exports": {
-    ".": "./dist/exports.js"
-  }, 
+    ".": "./dist/src/index.js"
+  },
   "scripts": {
     "next:dev": "next dev",
     "next:build": "next build",
-    "next:start": "next start"
+    "next:start": "next start",
+  "build": "rimraf dist && npx tsc --outDir dist --declaration && npx sass src/form.scss dist/styles/form.css && npx sass src/main.scss dist/styles/main.css && npx sass src/variables.scss dist/styles/variables.css"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
     "clsx": "^2.1.1",
     "next": "15.5.2",
-    "sass": "^1.92.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.92.0",
+    "typescript": "^5"
   },
   "peerDependencies": {
     "react": ">=18",
