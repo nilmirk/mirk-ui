@@ -16,6 +16,7 @@ enum Text {
   Body1 = "body1",
   Body2 = "body2",
   Body3 = "body3",
+  Body4 = "body4",
   Button1 = "button1",
   Button2 = "button2",
   Caption1 = "caption1",
