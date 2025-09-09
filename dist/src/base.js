@@ -17,6 +17,7 @@ var Text;
     Text["Body1"] = "body1";
     Text["Body2"] = "body2";
     Text["Body3"] = "body3";
+    Text["Body4"] = "body4";
     Text["Button1"] = "button1";
     Text["Button2"] = "button2";
     Text["Caption1"] = "caption1";
